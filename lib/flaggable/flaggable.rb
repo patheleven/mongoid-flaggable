@@ -27,7 +27,7 @@ module Mongoid
           end
         end
       rescue
-        puts 'no user class found'
+        puts 'Leaving Flag untouched as no user class is present'
       end
     end
   end

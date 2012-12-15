@@ -1,8 +1,8 @@
 *.gem
 *.rbc
-.*.un~                                                                                                                             
-.*.swp                                                                        
-.*.swo                                                                        
+.*.un~
+.*.swp
+.*.swo
 .DS_Store
 .bundle
 .config

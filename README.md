@@ -1,12 +1,12 @@
-# .
+# Mongoid::Flaggable
 
-TODO: Write a gem description
+Do you want to flag content that you have stored in mongoid in your app?
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem '.'
+    gem 'mongoid-flaggable'
 
 And then execute:
 
@@ -14,11 +14,25 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install .
+    $ gem install mongoid-flaggable
 
 ## Usage
 
-TODO: Write usage instructions here
+To have content that you can flag in your application just include 
+Mongoid::flaggable in your Mongoid Documents like so:
+
+    class Article
+      include Mongoid::Document
+      include Mongoid::Flaggable
+    end
+
+Once you have done so there will be a couple of methods that will be 
+injected in your _Article_ class: 
+
+  - \#flag_with_reason
+  - \#flag_for_user_with_reason (_note that this method will only be 
+    injected if there is a User object present in the vm at runtime_)
+ 
 
 ## Contributing
 

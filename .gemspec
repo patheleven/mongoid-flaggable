@@ -4,13 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'version'
 
 Gem::Specification.new do |gem|
-  gem.name          = 'Mongoid Flaggable'
+  gem.name          = 'mongoid-flaggable'
   gem.version       = Mongoid::Flaggable::VERSION
-  gem.authors       = ["Enrique Comba Riepenhausen"]
+  gem.authors       = ['Enrique Comba Riepenhausen']
   gem.email         = ['ecomba@path11.com']
   gem.description   = %q{Flag content easily}
-  gem.summary       = %q{Adds the capacity to flag (report) content}
-  gem.homepage      = ""
+  gem.summary       = %q{Have you ever had content in an application that
+                        your users wanted to flag? Now you can.}
+  gem.homepage      = "https://github.com/path11/mongoid-flaggable"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
